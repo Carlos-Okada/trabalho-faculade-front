@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+    <div>
+        <hi id ="titulo" > CADASTRE SEU PRODUTO </hi>
+        <p id = "subtitulo" >Faça seu cadastro e login para cadastrar seu carroo </p><br>
+    </div>
+
+    <form name="CadUsuario" action="pagina.jsp">
+        <div class = "campo">
+            <label for ="nome"> Nome </label>
+            <input type="text" name=" nome " id=" nome " maxlength="20" required="required" >
+            <label for ="sobrenome"> Sobrenome </label>
+            <input type="text" name="sobrenome" id="sobrenome" required="required" >
+            <br><br>
+
+            <label for ="email"> Email </label>
+            <input type="email" id="email" required="required">
+            <label for ="telefone"> Celular </label>
+            <input type="tel" id="telefone" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(xx) xxxxx-xxxx">
+            <br><br>
+
+            <label for ="marca"> Marca </label>
+            <input type="marca" id="marca" required="required">
+            <label for ="modelo"> Modelo </label>
+            <input type="modelo" id="modelo" required="required">
+
+            <br><br>
+            <label for="valor"> Valor do veiculo</label>
+            <input type="valor" id="valor" required="required">
+            <br><br>
+
+            <label for="fotos"> Enviar Fotos: </label>
+            <input type="file" id="fotos">
+
+
+        </div>
+        <br>
+        <br>
+        <div class = "campo">
+            <label> Marque opcionais: </label><br>
+                <input type ="radio" name ="ar_cond" value="1"> Ar Coondicionado
+            <br>
+                <input type="radio" name="controle" value="2"> Controle de Tração
+            <br>
+                <input type="radio" name="teto" value="3"> Teto Solar  
+            <br>
+                <input type="radio" name="bancos" value="4"> Bancos de Couro
+            <br>
+                <input type="radio" name="blindado" value="5"> Blindado
+        </div>
+
+        <br>
+
+        <div class = "campo">
+            <label for ="ano_modelo"> Ano/Modelo: </label> <br>
+            <select name="ano_de_fabricacao">
+                <option value="1">2022</option>
+                <option value="2">2021</option>
+                <option value="3">2020</option>
+                <option value="4">2019</option>
+                <option value="5">2018</option>
+                <option value="6">2017</option>
+                <option value="7">2016</option>
+            </select>
+        </div>
+
+        <br>
+
+         <div class="campo">
+            <label for="comentarios">Descreva seu carro<br>
+                 caso queira adicionar detalhes:</label>
+                 <br>
+            <textarea rows="8" style="width: 24em" id="cometarios" name="comentarios"></textarea>
+         </div>
+         <br>
+         <button class="botao">
+                <input type="reset" name="limpar" value="limpar">
+                <input type="submit"name="concluido" value="Enviar">
+        </button> 
+
+    </form>
+   
+     <h4>
+        Está com duvida sobre o valor do seu carro? Consulte aqui a Tabela Fipe: <a href="https://veiculos.fipe.org.br/" >TabelaFipe</a>
+    </h4>
+     
+    
+</body>
+</html>

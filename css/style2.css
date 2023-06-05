@@ -1,0 +1,51 @@
+body {
+    background:  rgb(209, 203, 202);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    /* width - significa altura e weight seguinifica tamanho */
+}
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+
+h1{
+   margin-top: 10px;
+   margin-bottom: 0; 
+   letter-spacing: -3; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+   font-size: 40px;
+}
+
+h2{
+    margin-top: 0;
+    font-style: italic;
+    font-variant: small-caps;
+    color: rgb(68 67 67);
+    font-weight: 100;
+    letter-spacing: -2px
+    
+}
+
+.social-links{/*estou criando classes lá no HTML para depois vir aqui e mudar o layout dos grupos criados*/
+    text-decoration: none; /*essa tag serve para a retirada dos "anderlines que vem junto com as figuras"*/
+}
+.social-icons {
+    width: 40px;
+}
+
+.rodape {
+    margin-top: 360px;
+    text-align: center;
+    padding:  15px 0 ;
+    background-color:  rgb(59, 57, 67);
+    color: white;
+}
